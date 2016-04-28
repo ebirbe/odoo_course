@@ -1,1 +1,3 @@
-Repository for new Odoo's developers course, this is only a test.
+# Repository for new Odoo's developers course
+
+This is only a test repository.
