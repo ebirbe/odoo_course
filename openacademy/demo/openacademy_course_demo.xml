@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+       <!--Data demo of openacademy course-->
+       <record model="openacademy.course" id="course0">
+          <field name="name">Programming Fundamentals</field>
+          <field name="description">* Start thinking like a programmer
+* Make your own programs
+* Use the computer to help somebody
+          </field>
+       </record>
+
+       <record model="openacademy.course" id="course1">
+          <field name="name">Programming Expert</field>         
+       </record>
+
+       <record model="openacademy.course" id="course2">
+            <field name="name">Database Fundamentals</field>
+            <field name="description">Make your data persist</field>
+        </record>
+
+    </data>
+</openerp>
