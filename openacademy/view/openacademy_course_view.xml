@@ -17,8 +17,13 @@
                             <page string="Description">
                                 <field name="description"/>
                             </page>
-                            <page string="About">
-                                This is an example of a super duper notebook.
+                            <page string="Sessions">
+                                <field name="session_ids">
+                                    <tree string="Registered Sessions" editable="bottom">
+                                        <field name="name"/>
+                                        <field name="instructor_id"/>
+                                    </tree>
+                                </field>
                             </page>
                         </notebook>
                     </sheet>
