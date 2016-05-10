@@ -18,6 +18,7 @@
 
     # always loaded
     'data': [
+        'report/session.xml',
         'security/security.xml',
         'security/ir.model.access.csv',
         'view/openacademy_course_view.xml',
