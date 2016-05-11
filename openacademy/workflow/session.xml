@@ -49,7 +49,7 @@ model.search([('id', 'in', context['active_ids'])]).action_done()
             <field name="wkf_id" ref="wkf_session"/>
             <field name="kind">dummy</field>
             <field name="action"></field>
-            <field name="action" ref="set_session_to_done"/>
+            <field name="action_id" ref="set_session_to_done"/>
         </record>
 
         <record model="workflow.transition" id="session_draft_to_confirmed">
