@@ -6,7 +6,7 @@ PORT = 8069
 DB = 'curso_odoo'
 USER = 'admin'
 PASS = 'admin'
-ROOT = 'http://%s:%d/xmlrpc/' % (HOST,PORT)
+ROOT = 'http://%s:%d/xmlrpc/' % (HOST, PORT)
 
 # 1. Login
 uid = xmlrpclib.ServerProxy(ROOT + 'common').login(DB, USER, PASS)
@@ -17,11 +17,11 @@ call = functools.partial(
     DB, uid, PASS)
 
 # 2. Read the sessions
-sessions = call('openacademy.session','search_read', [], ['name','seats'])
+sessions = call('openacademy.session', 'search_read', [], ['name', 'seats'])
 for session in sessions:
     print "Session %s (%s seats)" % (session['name'], session['seats'])
 # 3.create a new session
 session_id = call('openacademy.session', 'create', {
-    'name' : 'My session',
-    'course_id' : 2,
+    'name': 'My session',
+    'course_id': 2,
 })
