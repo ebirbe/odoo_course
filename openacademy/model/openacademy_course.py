@@ -1,8 +1,8 @@
-from openerp import api, fields, models
-
 '''
 Model class for Course
 '''
+
+from openerp import api, fields, models
 
 
 class Course(models.Model):
